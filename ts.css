@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#cabecalho{
+    border: 1px solid black;
+    height: 8vh;
+}
+
+#corpo{
+    display: grid;
+    grid-template-columns: 1fr  3fr 1fr;
+    grid-template-rows: 45vh 60vh 10vh ;
+    grid-template-areas: "perguntas   introducao   decidir"
+                         "perguntas   introducao   decidir"
+                         "nos         introducao   decidir"
+                         "nos         introducao   decidir";
+    height: 91vh;
+}
+
+#perguntas{
+    background-color: black;
+    height: 45vh;
+}
+
+#nos{
+    height: 46vh;
+    background-color: rgb(7, 175, 241);
+    
+}
+
+#introducao{
+    height: 91vh;
+    background-color: blue;
+}
+
+#decidir{
+    background-color: darkgreen;
+    height: 91vh;
+}
