@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    display: grid !important;
+    grid-template-areas: "cabecalho"
+                         "corpo";
+                         grid-template-rows: 5vh 50vh;
+
+    
+    grid-gap: 10px;
+    border: 5px solid blue;
+}
+
+#corpo{
+    grid-area: corpo;
+    display: grid;
+    grid-template-areas: "perguntas introducao modelos"
+                         "nos       introducao modelos";
+                         grid-template-rows: 38vh 38vh 38vh ;
+                         grid-template-columns: 1fr 3fr 1fr;
+    border:  5px solid red;
+}
+#cabecalho{
+    grid-area: cabecalho !important;
+    border: 1px solid black;
+}
+
+#perguntas{
+    grid-area: perguntas !important;
+    background-color: black;
+}
+
+#nos{
+    grid-area: nos !important;
+    background-color: rgb(7, 175, 241);
+    
+}
+
+#introducao{
+    grid-area: introducao !important;
+    background-color: blue;
+}
+
+#menu{
+    background-color: rgba(226, 43, 43, 0.404);
+    width: 20vw;
+    height: 43vh;
+}
