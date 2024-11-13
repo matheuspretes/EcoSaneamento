@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    display: grid;
+    grid-template-areas: "cabecalho"
+                         "corpo";
+    grid-gap: 10px;
+}
+
+#corpo{
+    display: grid;
+    grid-template-areas: "conteudo lateral";
+    grid-gap: 10px;
+}
+
+#lateral{
+    display: grid;
+    grid-template-areas: "outrosModelos"
+                         "sobre"
+                         "perguntas";
+    grid-gap: 10px;
+}
+
