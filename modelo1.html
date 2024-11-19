@@ -12,9 +12,10 @@
     <div id="container" class="p-1">
         <div id="cabecalho" class="d-flex flex-row justify-items-space-around"
             style="background-color:rgba(0, 0, 255, 0.171); width: 90vw; height: 5vh;">
-            <div id="titulo" style="width: 80vw; height: 5vh;  font-family: 'Times New Roman', Times, serif;"
+            <div id="titulo"
+                style="width: 80vw; height: 5vh;  font-family: 'Times New Roman', Times, serif; font-size: 3rem;"
                 class="d-flex align-items-center justify-content-center">
-                <h1>Titulo do site</h1>
+                <p> Tanque de Evapotranspiração</p>
             </div>
             <div id="logo" style="width: 10vw; height: 5v;">
                 <img src="imagens/bananeira.png" style="width: 100%; height: 100%;">
@@ -24,16 +25,41 @@
         <div id="corpo" style="background-color: aqua; width: 90vw; height: 90vh;" class="d-flex flex-row">
             <div id="conteudo" style="background-color: aqua; width: 70vw; height: 90vh">
                 <div id="parteCima" class="d-flex flex-row" style="width: 70vw; height: 45vh;">
-                    <div id="texto1" class="d-flex " style="width: 35vw; height: 45vh;">
-                        <p class="text-justify" style="overflow: hidden;" ></p>
+                    <div id="texto1" class="d-flex flex-column" style="width: 40vw; height: 45vh;">
+
+                        <h3 class="text-center" style="width: 40vw; height: 3vh;"> Construção do TEVAP</h5>
+                            <p class="text-justify" style="width: 40vw; height:  40vh;">
+                                Considerando que, em média, cada pessoa utilize o vaso sanitário cerca de 4
+                                (quatro) vezes por dia e o volume de cada descarga varie entre 7 ℓ e 20 ℓ, dependendo do
+                                tipo de equipamento, pode-se estimar que o consumo de água médio por pessoa, relativo
+                                ao uso do vaso sanitário, varie entre 28 ℓ e 80 ℓ.d-1. Adotando-se como base para o
+                                cálculo uma caixa de descarga com capacidade para 8 ℓ, estima-se um consumo per
+                                capita de 32 ℓ.d-1. Pode-se então propor a seguinte equação para o cálculo de
+                                dimensionamento do sistema: <br>
+                                A =(( n * Qd)/(ET * Ktevap - P *Ki)) <br>
+                                Onde:
+                                A = área superficial do tanque, em m²;
+                                n = número médio de usuários do sistema;
+                                Qd = vazão diária por pessoa, em ℓ.d-1, de acordo com o tipo de descarga e o número de
+                                utilizações por pessoa;
+                                ktevap = coeficiente do tanque, adotado como 2,71, para as condições da realização da
+                                pesquisa (Galbiati, 2009);
+                                ET0 = evapotranspiração de referência média do local, em mm.d-1;
+                                P = pluviosidade média do local, em mm.d-1;
+                                ki = coeficiente de infiltração, variando de 0 a 1.
+
+                            </p>
                     </div>
-                    <div id="imagemModelo" class="d-flex justify-content-center align-items-center" style="width: 35vw; height: 45vh;" >
-                        <img src="imagens/modelo1.png" style="width: 90%; height: 90%;">
+                    <div id="imagemModelo" class="d-flex justify-content-center align-items-center"
+                        style="width: 30vw; height: 45vh;">
+                        <img src="imagens/modelo1-imagem3.png" style="width: 90%; height: 90%;">
                     </div>
                 </div>
 
-                <div id="parteBaixo" style="width: 70vw; height: 45vh;">
+                <div id="parteBaixo" style="width: 70vw; height: 45vh; overflow: auto;">
+                    <p class="text-justify">
 
+                    </p>
                 </div>
             </div>
 
