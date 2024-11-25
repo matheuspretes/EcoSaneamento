@@ -10,6 +10,13 @@
     grid-gap: 10px;
 }
 
+#cabecalho{
+    grid-area: cabecalho;
+    background-color:rgba(0, 0, 255, 0.171);
+    width: 91vw;
+    height: 6vh;
+}
+
 #corpo{
     display: grid;
     grid-template-areas: "conteudo lateral";
@@ -27,4 +34,45 @@
 #outrosModelos{
     width: 20vw;
     height: 55vh;
+}
+
+#titulo{
+    width: 80vw;
+    height: 5vh; 
+    font-size: 2rem;
+}
+
+#logo{
+    width: 10vw; 
+    height: 5vh;
+}
+
+#corpo{
+    width: 91vw; 
+    height: 90vh;
+}
+
+#conteudo{
+    grid-area: conteudo;
+    grid-template-areas: "texto1 imagemModelo"
+                         "texto2 texto2";
+    background-color: aqua; 
+    width: 70vw; 
+    height: 90vh;
+}
+
+
+#texto1{
+    grid-area: texto1;
+    width: 42vw; 
+    height: 45vh;   
+    font-size: 1rem;
+}
+
+#imagemModelo{
+    grid-area: imagemModelo;
+}
+
+#texto2{
+    grid-area: texto2;
 }
