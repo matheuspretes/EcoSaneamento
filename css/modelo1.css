@@ -61,6 +61,33 @@
     height: 90vh;
 }
 
+#conteudo{
+    font-family: "Crimson Pro";
+    color: #471e1b;
+}
+
+/* As 3 partes abaixo são o scrollbar da div conteúdo */
+#conteudo{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#conteudo::-webkit-scrollbar{
+    width: 10px; 
+    background-color: #7e8c10;
+    border-radius: 10px;
+}
+
+#conteudo::-webkit-scrollbar-thumb{
+    background-color: #763531;
+    border-radius: 10px;
+}
+
+p {
+    margin: 0;
+    text-indent: 3ch;
+}
+
 
 #texto1{
     grid-area: texto1;
