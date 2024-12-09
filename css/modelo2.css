@@ -7,7 +7,6 @@ body{
     background-image: url(../imagens/download\ \(1\).jpeg);
 }
 
-
 #container{
     display: grid;
     grid-template-areas: "cabecalho"
@@ -17,10 +16,9 @@ body{
 
 #cabecalho{
     grid-area: cabecalho;
-    background-color: #b2bd3a;
+    background-color:#b2bd3a;
     width: 91vw;
     height: 6vh;
-
 }
 
 #corpo{
@@ -97,18 +95,3 @@ p {
     text-indent: 3ch;
 }
 
-
-#texto1{
-    grid-area: texto1;
-    width: 42vw; 
-    height: 45vh;   
-    font-size: 1rem;
-}
-
-#imagemModelo{
-    grid-area: imagemModelo;
-}
-
-#texto2{
-    grid-area: texto2;
-}
