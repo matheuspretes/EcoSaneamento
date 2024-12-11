@@ -24,7 +24,7 @@ body{
     grid-area: corpo;
     display: grid;
     grid-template-areas: "nos introducao modelos";
-                         grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-gap: 10px;
 }
 #cabecalho{
@@ -60,6 +60,9 @@ body{
 #conteudo{
     font-family: "Crimson Pro";
     color: #471e1b;
+    background-color: #c5d169;
+    width: 60vw; 
+    height: 90vh;
 }
 
 /* As 3 partes abaixo são o scrollbar da div conteúdo */
