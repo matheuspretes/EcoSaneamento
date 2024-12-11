@@ -23,9 +23,7 @@ body{
 #corpo{
     grid-area: corpo;
     display: grid;
-    grid-template-areas: "perguntas introducao modelos"
-                         "nos       introducao modelos";
-                         grid-template-rows: 38vh 38vh 38vh ;
+    grid-template-areas: "nos introducao modelos";
                          grid-template-columns: 1fr 3fr 1fr;
     grid-gap: 10px;
 }
@@ -34,21 +32,13 @@ body{
     border: 1px solid black;
 }
 
-#FAQ{
-    overflow: hidden;
-    overflow-y: scroll;
-}
-
-#perguntas{
-    grid-area: perguntas !important;
-    background-color: black;
-}
-
 #nos{
     grid-area: nos !important;
-    background-color: rgb(7, 175, 241);
     overflow: hidden;
     overflow-y: scroll;
+    background-color: #c5d169;  
+    width: 20vw; 
+    height: 85vh;
     
 }
 
@@ -59,7 +49,7 @@ body{
 
 #menu{
     width: 20vw;
-    height: 43vh;
+    height: 100%;
 }
 
 #formPerguntas{
@@ -91,11 +81,11 @@ body{
 
 /* As 3 partes abaixo são o scrollbar da div sobre Nós */
 
-#nos{
-    overflow: hidden;
-    overflow-y: scroll;
+#sobre{
+    width: 20vw; 
+    height: 12vh; 
+    background-color: #c5d169;
 }
-
 #nos::-webkit-scrollbar{
     width: 10px; 
     background-color: #7e8c10;
@@ -107,20 +97,7 @@ body{
     border-radius: 10px;
 }
 
-/* As 3 partes abaixo são o scrollbar da div FAQ */
-
-#FAQ{
-    overflow: hidden;
-    overflow-y: scroll;
-}
-
-#FAQ::-webkit-scrollbar{
-    width: 10px; 
-    background-color: #7e8c10;
-    border-radius: 10px;
-}
-
-#FAQ::-webkit-scrollbar-thumb{
-    background-color: #763531;
-    border-radius: 10px;
+#outrosModelos{
+    width: 20vw; 
+    height: 90vh;
 }
