@@ -63,11 +63,40 @@ body{
 
 #conteudo{
     grid-area: conteudo;
-    grid-template-areas: "texto1 imagemModelo"
-                         "texto2 texto2";
+    grid-template-areas: "parteCima"
+                         "parteBaixo";
     background-color: #b2bd3a; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40vh 50vh;
     width: 70vw; 
     height: 90vh;
+}
+
+#parteCima{
+    grid-area: parteCima;
+    grid-template-areas: "texto1 imagemModelo";
+    grid-template-columns: 50% 50%;
+}
+#parteBaixo{
+    grid-area: parteBaixo;
+}
+
+#texto1{
+    grid-area: texto1;
+    width: 42vw; 
+    height: 45vh;   
+    font-size: 1rem;
+}
+
+#imagemModelo{
+    grid-area: imagemModelo;
+}
+
+#texto2{
+    grid-area: texto2;
+    width: 42vw; 
+    height: 45vh;   
+    font-size: 1rem;
 }
 
 #conteudo{
@@ -98,17 +127,3 @@ p {
 }
 
 
-#texto1{
-    grid-area: texto1;
-    width: 42vw; 
-    height: 45vh;   
-    font-size: 1rem;
-}
-
-#imagemModelo{
-    grid-area: imagemModelo;
-}
-
-#texto2{
-    grid-area: texto2;
-}
