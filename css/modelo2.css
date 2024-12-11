@@ -16,8 +16,8 @@ body{
 
 #cabecalho{
     grid-area: cabecalho;
-    background-color:#b2bd3a;
-    width: 91vw;
+    background-color:#b2bd3a; 
+    width: 90.5vw;
     height: 6vh;
 }
 

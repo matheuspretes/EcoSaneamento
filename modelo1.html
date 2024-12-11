@@ -11,61 +11,54 @@
 <body class="ml-5">
     <div id="container" class="p-1">
         <div id="cabecalho" class="d-flex flex-row justify-items-space-around">
-            <div id="titulo" class="d-flex align-items-center justify-content-center text-wrap">
+            <div id="titulo" class="d-flex  justify-content-center text-wrap" style="color: black">
                 <h1> Tanque de Evapotranspiração</h1>
             </div>
-            <div id="logo">
-                <img src="imagens/bananeira.png" style="width: 100%; height: 100%;">
+            <div id="logo" style="width: 21vw; height: 5vh;" class="d-flex justify-content-center">
+                <img src="imagens/bananeira.png" style="width: 50%; height: 100%;">
             </div>
 
         </div>
         <div id="corpo" class="d-flex flex-row">
             <div id="conteudo">
-                <div id="parteCima">
-                    <!-- Dividi a div do conteudo em 3, para aproveitar o espaço -->
-                    <div id="texto1" class="d-flex flex-column">
-
-                        <h3 style="width: 40vw; height: 3vh;"> Construção do TEVAP</h3>
-                        <h5 class="font-weight-bold"> Dicas:</h5>
-
-                        <p class="text-justify" style="width: 40vw; height:  40vh;">
-                            Considerando que, em média, cada pessoa utilize o vaso sanitário cerca
-                            de 4
-                            (quatro) vezes por dia e o volume de cada descarga varie entre 7 ℓ e 20 ℓ, dependendo do
-                            tipo de equipamento, pode-se estimar que o consumo de água médio por pessoa, relativo
-                            ao uso do vaso sanitário, varie entre 28 ℓ e 80 ℓ.d-1. Adotando-se como base para o
-                            cálculo uma caixa de descarga com capacidade para 8 ℓ, estima-se um consumo per
-                            capita de 32 ℓ.d-1. Pode-se então propor a seguinte equação para o cálculo de
-                            dimensionamento do sistema: <br>
-                            A =(( n * Qd)/(ET * Ktevap - P *Ki)) <br>
-                            A = área superficial do tanque, em m²; <br>
-                            <b>n</b> = número médio de usuários do sistema; <br>
-                            Qd = vazão diária por pessoa, em ℓ.d-1, de acordo com o tipo de descarga e o número de
-                            utilizações por pessoa; <br>
-                            ktevap = coeficiente do tanque, adotado como 2,71, para as condições da realização da
-                            pesquisa (Galbiati, 2009); <br>
-                            ET0 = evapotranspiração de referência média do local, em mm.d-1; <br>
-                            P = pluviosidade média do local, em mm.d-1; <br>
-                            ki = coeficiente de infiltração, variando de 0 a 1. <br>
-                            Para evitar extravasamentos, a parte superior do tanque deve ser abaulada, mais
-                            alta no centro, sendo acima do nível da borda, isso permite com que a água da chuva, se
-                            houver, possa escoar superficialmente, após a saturação da camada superficial do
-                            tanque. O tubo ladrão a ser instalado, deve ser posicionado a 10 cm abaixo da superfície
-                            do solo do tanque, para uma melhor eficácia no monitoramento do sistema.
-                        </p>
-                    </div>
-                    <div id="imagemModelo" style="width: 40vw; height: 45vh;">
-                        <img src="imagens/modelo1-imagem3.png" style="width: 90%; height: 90%;">
-                    </div>
+                <div id="imagemModelo" class="d-flex justify-content-center align-items-center"
+                    style="width: 68vw; height: 45vh;">
+                    <img src="imagens/modelo1.png" style="width: 80%; height: 90%;">
                 </div>
+                <div id="texto" class="p-1" style="font-size: 1.25rem;">
+                    <h3 style="width: 68vw; height: 3vh;" class="text-center font-weight-bold"> Construção do
+                        TEVAP</h3>
+                    <h5 class="font-weight-bold text-center"> Dicas:</h5>
 
-                <div id="parteBaixo">
-                    <div id="texto2">
-                        <p>
-                        </p>
-                        <h5 class="font-weight-bold"> Passo a passo:</h5>
-                        <p>
-                            A - Orientação em relação ao sol
+                    <p class="text-justify" style="width: 68vw; height:  100%;">
+                        Considerando que, em média, cada pessoa utilize o vaso sanitário cerca
+                        de 4
+                        (quatro) vezes por dia e o volume de cada descarga varie entre 7 ℓ e 20 ℓ, dependendo do
+                        tipo de equipamento, pode-se estimar que o consumo de água médio por pessoa, relativo
+                        ao uso do vaso sanitário, varie entre 28 ℓ e 80 ℓ.d-1. Adotando-se como base para o
+                        cálculo uma caixa de descarga com capacidade para 8 ℓ, estima-se um consumo per
+                        capita de 32 ℓ.d-1. Pode-se então propor a seguinte equação para o cálculo de
+                        dimensionamento do sistema: <br>
+                        A =(( n * Qd)/(ET * Ktevap - P *Ki)) <br>
+                        A = área superficial do tanque, em m²; <br>
+                        <b>n</b> = número médio de usuários do sistema; <br>
+                        Qd = vazão diária por pessoa, em ℓ.d-1, de acordo com o tipo de descarga e o número de
+                        utilizações por pessoa; <br>
+                        ktevap = coeficiente do tanque, adotado como 2,71, para as condições da realização da
+                        pesquisa (Galbiati, 2009); <br>
+                        ET0 = evapotranspiração de referência média do local, em mm.d-1; <br>
+                        P = pluviosidade média do local, em mm.d-1; <br>
+                        ki = coeficiente de infiltração, variando de 0 a 1. <br>
+                        Para evitar extravasamentos, a parte superior do tanque deve ser abaulada, mais
+                        alta no centro, sendo acima do nível da borda, isso permite com que a água da chuva, se
+                        houver, possa escoar superficialmente, após a saturação da camada superficial do
+                        tanque. O tubo ladrão a ser instalado, deve ser posicionado a 10 cm abaixo da superfície
+                        do solo do tanque, para uma melhor eficácia no monitoramento do sistema. <br>
+
+                    </p>
+                    <h5 class="font-weight-bold text-center mp-2" > Passo a passo:</h5>
+                    <p>
+                    A - Orientação em relação ao sol
                             Como a evapotranspiração depende em grande parte da incidência do sol, o
                             Tanque deve ser orientado para o norte (no hemisfério sul) e sem obstáculos, como
                             árvores altas próximas ao tanque, tanto para não fazer sombra, como para permitir
@@ -126,40 +119,38 @@
                             O tubo de drenagem, de 50 mm de diâmetro, será conectada a um canteiro de
                             infiltração e de evapotranspiração ou a uma vala de infiltração (conforme NBR
                             13969/1997) para disposição final do efluente extravasado.
-                        </p>
-                    </div>
+
+                    </p>
+
                 </div>
             </div>
 
-            <div id="lateral">
+            <div id="lateral" class="justify-content-center align-content-around" style="background-color: rgba(172, 255, 47,); width: 21vw; height: 90vh;">
                 <div id="outrosModelos" class="d-flex flex-column">
-                    <div class="d-flex align-items-center" style="width: 20vw; height: 30vh;">
+                    <div class="d-flex align-items-center"
+                        style="background-color: #7e8c10;  width: 20vw; height: 30vh;">
                         <a href="modelo1.html">
                             <img src="imagens/modelo1.png" class="rounded-circle" style="width: 100%; height: 100%;">
                             <!-- Inserir imagens dos modelos -->
-                            <p>círculo de bananeiras</p>
                         </a>
                     </div>
-                    <div class="mt-3 d-flex align-items-center" style="width: 20vw; height: 30vh;">
+                    <div class="mt-3 d-flex align-items-center"
+                        style="background-color: #7e8c10; width: 20vw; height: 30vh;">
                         <a href="modelo2.html">
                             <img src="imagens/vermifiltro.jpg" class="rounded-circle"
                                 style="width: 100%; height: 100%;">
-                            <p>vermifiltro</p>
                         </a>
                         <!-- Inserir imagens dos modelos -->
 
                     </div>
                 </div>
-                <a href="introducao.html">
-                    <div id="sobre" class="rounded mt-4 d-flex align-items-center justify-content-center"
-                        style="width: 20vw; height: 12vh; background-color: rgba(137, 43, 226, 0.37);">
-
-                        <p class="text-monospace font-weight-bold">Sobre nós</p>
-
-                    </div>
-                </a>
+                <a href="introducao2.html">
+                <div id="sobre" class="rounded mt-4 d-flex align-items-center justify-content-center"
+                    style="width: 20vw; height: 12vh; background-color: #7e8c10; color: white;">
+                    <p class="text-monospace font-weight-bold">Sobre nós</p>
+                </div>
                 <div id="perguntas" class="rounded mt-3  d-flex align-items-center justify-content-center"
-                    style="width: 20vw; height: 12vh; background-color: rgba(137, 43, 226, 0.37);">
+                    style="width: 20vw; height: 12vh; background-color: #7e8c10; color: white;">
                     <p class="text-monospace font-weight-bold"> Email para perguntas</p>
                 </div>
             </div>
