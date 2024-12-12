@@ -6,7 +6,11 @@
 }
 
 body{
-    background-image: url(../imagens/download\ \(1\).jpeg);
+    background-image: url(../imagens/FloresHorizontal.jpg);
+}
+p {
+    margin: 8px;
+    text-indent: 3ch;
 }
 
 #container{
@@ -104,5 +108,3 @@ body{
     width: 20vw; 
     height: 90vh;
 }
-
-/* modelo1 e modelo2 */
