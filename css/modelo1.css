@@ -2,7 +2,9 @@
 
 *{
     margin: 0px;
-    padding: 0px
+    padding: 0px;
+    font-family: "Crimson Pro";
+    color: #471e1b
 }
 
 body{
@@ -47,12 +49,11 @@ h1{
     grid-auto-columns: 1fr 1fr;
     grid-gap: 10px;
     background-color: #b2bd3a; 
-    height: 10vh
+    height: 10vh;
 }
 
 #modelo2{
-    grid-area: modelo2;
-    background-color: #7e8c10; 
+    grid-area: modelo2; 
     width: 20vw; 
     height: 10vh
 }
@@ -61,7 +62,6 @@ h1{
     grid-area: sobre;
     width: 20vw; 
     height: 10vh; 
-    background-color: #7e8c10; 
     color: white
 }
 
@@ -97,11 +97,6 @@ h1{
     grid-area: imagemModelo
 }
 
-#conteudo{
-    font-family: "Crimson Pro";
-    color: #471e1b
-}
-
 /* As 3 partes abaixo são o scrollbar da div conteúdo */
 #conteudo{
     overflow: hidden;
@@ -124,4 +119,11 @@ p {
     text-indent: 3ch
 }
 
-
+a{
+    font-size: 20px;
+    background-color: #742c47;
+    color: beige;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+}

@@ -3,6 +3,8 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: "Crimson Pro";
+    color: #471e1b
 }
 
 body{
@@ -11,10 +13,6 @@ body{
 p {
     margin: 8px;
     text-indent: 3ch;
-}
-h1{
-    font-family: "Crimson Pro";
-    color: #471e1b; 
 }
 
 #container{
@@ -66,8 +64,6 @@ h1{
 }
 
 #conteudo{
-    font-family: "Crimson Pro";
-    color: #471e1b;
     background-color: #c5d169;
     width: 60vw; 
     height: 90vh;
