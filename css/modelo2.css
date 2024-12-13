@@ -20,7 +20,7 @@ body{
 #cabecalho{
     grid-area: cabecalho;
     background-color:#b2bd3a; 
-    width: 90.5vw;
+    width: 95vw;
     height: 6vh;
 }
 
@@ -31,8 +31,8 @@ body{
                          "conteudo";
     grid-gap: 10px;
     grid-template-rows: 15vh 75vh;
-    width: 91vw; 
-    height: 90vh
+    width: 95vw; 
+    height: 92vh
 }
 
 #botoes{
