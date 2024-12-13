@@ -46,7 +46,7 @@ h1{
     grid-area: botoes;
     display: grid;
     grid-template-areas: "modelo2 sobre";
-    grid-auto-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     background-color: #b2bd3a; 
     height: 10vh;
@@ -54,13 +54,13 @@ h1{
 
 #modelo2{
     grid-area: modelo2; 
-    width: 20vw; 
+    width: 50%; 
     height: 10vh
 }
 
 #sobre{
     grid-area: sobre;
-    width: 20vw; 
+    width: 50%; 
     height: 10vh; 
     color: white
 }
@@ -123,7 +123,7 @@ a{
     font-size: 20px;
     background-color: #742c47;
     color: beige;
-    padding: 15px;
+    padding: 10px;
     border-radius: 8px;
     text-decoration: none;
 }
