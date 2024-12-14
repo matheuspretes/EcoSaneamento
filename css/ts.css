@@ -13,6 +13,7 @@ p {
     font-size: 20px;
 }
 
+
 #container{
     display: grid !important;
     grid-template-areas: "conteudo"
@@ -28,9 +29,26 @@ p {
     height: 100vh;
 }
 
+#texto{
+    container-type: inline-size;
+}
+
+#texto > p{
+    font-size: clamp(0.65rem, 2cqi, 1.2rem);
+}
+
+#modelos{
+    container-type: inline-size;
+}
+
+#modelos > h{
+    font-size: 1cqi;
+}
+
 body{
     overflow: hidden;
     overflow-y: scroll;
+    background-color: #c5d169
 }
 
 body::-webkit-scrollbar{
