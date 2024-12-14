@@ -29,7 +29,7 @@ body{
     display: grid;
     grid-template-areas: "botoes"
                          "conteudo";
-    grid-gap: 10px;
+    grid-gap: 5px;
     grid-template-rows: 15vh 75vh;
     width: 95vw; 
     height: 92vh
@@ -39,12 +39,11 @@ body{
     grid-area: botoes;
     display: grid;
     grid-template-areas: "modelo1 sobre";
-    grid-auto-columns: 1fr 1fr;
-    grid-gap: 10px;
-    background-color: #b2bd3a; 
-    height: 10vh
+    grid-auto-columns: 4fr 1fr;
+    grid-gap: 5px;
+    background-color: #b2bd3a;
+    height: 10vh;
 }
-
 #modelo1{
     grid-area: modelo1; 
     width: 20vw; 
@@ -110,3 +109,84 @@ p {
     text-indent: 3ch;
 }
 
+.alinhamento {
+    text-align: center;
+}
+
+@media screen and (max-width: 890px) {
+
+    #botoes {
+        grid-area: botoes;
+        height: 20vh
+    }
+
+    #sobre {
+        grid-area: sobre;
+        width: 30vw;
+        height: 10vh;
+
+
+    }
+
+    #modelo1 {
+        grid-area: modelo1;
+        width: 30vw;
+        height: 10vh
+    }
+
+    #imagemModelo {
+        grid-area: imagemModelo;
+        width: 78vw;
+
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    #botoes {
+        grid-area: botoes;
+        display: grid;
+        grid-template-areas: "modelo1 sobre";
+        grid-auto-columns: 2fr 2fr;
+        grid-gap: 5px;
+        background-color: #b2bd3a;
+        height: 10vh
+    }
+    
+}
+@media screen and (max-width: 650px) {
+    .dicas {
+        
+        height: 5vh;
+    }
+
+    .principal {
+        text-align: center;
+        height: 7vh;
+
+    }
+
+    .imagem{
+        width: 50%;
+        height: 100%;
+    }
+
+    #botoes {
+        grid-area: botoes;
+        height: 15vh
+    }
+
+    #sobre {
+        grid-area: sobre;
+        width: 40vw;
+        height: 10vh;
+
+    }
+
+    #modelo1 {
+        grid-area: modelo1;
+        width: 40vw;
+        height: 10vh
+    }
+
+
+}
