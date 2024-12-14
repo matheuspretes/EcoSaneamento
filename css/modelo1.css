@@ -49,21 +49,19 @@ body{
 
 #modelo2{
     grid-area: modelo2; 
-    width: 50%; 
+    width: 20vw; 
     height: 10vh;
-    border-radius: 3px;
 }
 
 #sobre{
     grid-area: sobre;
-    width: 50%; 
+    width: 20vw; 
     height: 10vh; 
     color: white;
-    border-radius: 3px
 }
 
 #titulo{
-    width: 80vw;
+    width: 100%;
     height: 5vh; 
     font-size: 2rem
 }
@@ -109,6 +107,14 @@ body{
     width: 10px; 
     background-color: #7e8c10;
     border-radius: 10px
+}
+
+#texto{
+    container-type: inline-size;
+}
+
+#texto p{
+    font-size: clamp(0.65rem, 2cqi, 1.2rem);
 }
 
 #conteudo::-webkit-scrollbar-thumb{
