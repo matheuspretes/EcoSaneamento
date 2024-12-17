@@ -37,7 +37,7 @@ body{
     height: 92vh
 }
 
-#botoes{
+#botoes {
     grid-area: botoes;
     display: grid;
     grid-template-areas: "modelo2 sobre";
@@ -46,7 +46,6 @@ body{
     border: 4px;
     background-color: #b2bd3a; 
     height: 10vh;
-    
 }
 
 #modelo2{
@@ -67,7 +66,8 @@ body{
 
 #titulo{
     width: 100%;
-    height: 6vh;
+    height: 5vh; 
+    font-size: 2rem
 }
 
 #logo{
@@ -90,6 +90,11 @@ body{
     
     
 }
+
+.alinhamento {
+    text-align: center;
+}
+
 #texto1{
     grid-area: texto1;
     width: 42vw; 
@@ -125,6 +130,14 @@ body{
     border-radius: 10px
 }
 
+#texto{
+    container-type: inline-size;
+}
+
+#texto p{
+    font-size: clamp(0.65rem, 2cqi, 1.2rem);
+}
+
 #conteudo::-webkit-scrollbar-thumb{
     background-color: #763531;
     border-radius: 10px
@@ -142,4 +155,82 @@ a{
     padding: 10px;
     border-radius: 8px;
     text-decoration: none;
+}
+
+@media screen and (max-width: 890px) {
+
+    #botoes {
+        grid-area: botoes;
+        height: 20vh
+    }
+
+    #sobre {
+        grid-area: sobre;
+        width: 30vw;
+        height: 10vh;
+
+
+    }
+
+    #modelo1 {
+        grid-area: modelo1;
+        width: 30vw;
+        height: 10vh
+    }
+
+    #imagemModelo {
+        grid-area: imagemModelo;
+        width: 78vw;
+
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    #botoes {
+        grid-area: botoes;
+        display: grid;
+        grid-template-areas: "modelo2 sobre";
+        grid-auto-columns: 2fr 2fr;
+        grid-gap: 5px;
+        background-color: #b2bd3a;
+        height: 10vh
+    }
+    
+}
+@media screen and (max-width: 650px) {
+    .alinhameno {
+        
+        height: 5vh;
+    }
+
+    .alinhamento {
+        text-align: center;
+        height: 7vh;
+
+    }
+
+    .imagem{
+        width: 50%;
+        height: 100%;
+    }
+
+    #botoes {
+        grid-area: botoes;
+        height: 15vh
+    }
+
+    #sobre {
+        grid-area: sobre;
+        width: 40vw;
+        height: 10vh;
+
+    }
+
+    #modelo2 {
+        grid-area: modelo2;
+        width: 40vw;
+        height: 10vh
+    }
+
+
 }

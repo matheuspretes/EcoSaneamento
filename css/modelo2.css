@@ -14,8 +14,8 @@ body {
 #container {
     display: grid;
     grid-template-areas: "cabecalho"
-        "corpo";
-    grid-gap: 10px;
+                         "corpo";
+    grid-gap: 5px;
 }
 
 #cabecalho {
@@ -29,8 +29,8 @@ body {
     grid-area: corpo;
     display: grid;
     grid-template-areas: "botoes"
-        "conteudo";
-    grid-gap: 10px;
+                         "conteudo";
+    grid-gap: 5px;
     grid-template-rows: 15vh 75vh;
     width: 95vw;
     height: 92vh
@@ -41,14 +41,13 @@ body {
     display: grid;
     grid-template-areas: "modelo1 sobre";
     grid-auto-columns: 4fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
     background-color: #b2bd3a;
-    height: 10vh
+    height: 10vh;
 }
-
-#modelo1 {
-    grid-area: modelo1;
-    width: 20vw;
+#modelo1{
+    grid-area: modelo1; 
+    width: 20vw; 
     height: 10vh
 }
 
@@ -66,8 +65,16 @@ body {
     font-size: 2rem;
 }
 
-#logo {
-    width: 10vw;
+#texto{
+    container-type: inline-size;
+}
+
+#texto p{
+    font-size: clamp(0.65rem, 2cqi, 1.2rem);
+}
+
+#logo{
+    width: 10vw; 
     height: 5vh;
 }
 
@@ -128,13 +135,8 @@ p {
     text-indent: 3ch;
 }
 
-.principal {
+.alinhamento {
     text-align: center;
-}
-
-.imagem{
-    width: 40%;
-    height: 100%;
 }
 
 @media screen and (max-width: 890px) {
@@ -171,7 +173,7 @@ p {
         display: grid;
         grid-template-areas: "modelo1 sobre";
         grid-auto-columns: 2fr 2fr;
-        grid-gap: 10px;
+        grid-gap: 5px;
         background-color: #b2bd3a;
         height: 10vh
     }
@@ -209,8 +211,8 @@ p {
     #modelo1 {
         grid-area: modelo1;
         width: 40vw;
-        height: 10vh
-    }
+        height: 10vh
+    }
 
 
 }

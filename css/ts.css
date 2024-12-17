@@ -7,104 +7,69 @@
     color: #471e1b
 }
 
-body{
-    background-image: url(../imagens/FloresHorizontal.jpg);
-}
 p {
     margin: 8px;
     text-indent: 3ch;
+    font-size: 20px;
 }
+
 
 #container{
     display: grid !important;
-    grid-template-areas: "cabecalho"
-                         "corpo";
-                         grid-template-rows: 5vh 50vh;
-
-    
-    grid-gap: 10px;
-    border: 5px solid blue;
-}
-
-#corpo{
-    grid-area: corpo;
-    display: grid;
-    grid-template-areas: "nos introducao modelos";
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-gap: 10px;
-}
-#cabecalho{
-    grid-area: cabecalho !important;
-    border: 1px solid black;
-}
-
-#nos{
-    grid-area: nos !important;
-    overflow: hidden;
-    overflow-y: scroll;
-    background-color: #c5d169;  
-    width: 20vw; 
-    height: 85vh;
-    
-}
-
-#introducao{
-    grid-area: introducao !important;
-    background-color: blue;
-}
-
-#menu{
-    width: 20vw;
-    height: 100%;
-}
-
-#formPerguntas{
-    display: flex;
-    align-items: flex-end;
+    grid-template-areas: "conteudo";    
 }
 
 #conteudo{
+    grid-area: conteudo;
+    grid-template-areas: "imagem"
+                         "cabecalho2"
+                         "modelos";
+    grid-template-rows: 30% 50% 20%;
     background-color: #c5d169;
-    width: 60vw; 
-    height: 90vh;
+    width: 100%; 
+    height: 100vh;
 }
 
-/* As 3 partes abaixo são o scrollbar da div conteúdo */
-#conteudo{
+#imagem{
+    grid-area: imagem;
+    height: 50vh;
+}
+
+#texto{
+    container-type: inline-size;
+}
+
+#texto > p{
+    font-size: clamp(0.65rem, 2cqi, 1.2rem);
+}
+
+#modelos{
+    container-type: inline-size;
+}
+
+#modelos > h{
+    font-size: 1cqi;
+}
+
+body{
     overflow: hidden;
     overflow-y: scroll;
+    background-color: #c5d169
 }
 
-#conteudo::-webkit-scrollbar{
+body::-webkit-scrollbar{
     width: 10px; 
     background-color: #7e8c10;
     border-radius: 10px;
 }
 
-#conteudo::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb{
     background-color: #763531;
     border-radius: 10px;
 }
-
-/* As 3 partes abaixo são o scrollbar da div sobre Nós */
 
 #sobre{
     width: 20vw; 
     height: 12vh; 
     background-color: #c5d169;
-}
-#nos::-webkit-scrollbar{
-    width: 10px; 
-    background-color: #7e8c10;
-    border-radius: 10px;
-}
-
-#nos::-webkit-scrollbar-thumb{
-    background-color: #763531;
-    border-radius: 10px;
-}
-
-#outrosModelos{
-    width: 20vw; 
-    height: 90vh;
 }
