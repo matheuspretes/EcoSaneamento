@@ -1,101 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Didact+Gothic&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Quattrocento:wght@400;700&family=Tangerine:wght@400;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-*{
+
+* {
     margin: 0px;
     padding: 0px;
     font-family: "Crimson Pro";
     color: #471e1b
 }
 
-body{
+body {
     background-image: url(../imagens/FloresHorizontal.jpg);
 }
 
-#container{
+#container {
     display: grid;
     grid-template-areas: "cabecalho"
-                         "corpo";
+        "corpo";
     grid-gap: 10px;
 }
 
-#cabecalho{
+#cabecalho {
     grid-area: cabecalho;
-    background-color:#b2bd3a; 
+    background-color: #b2bd3a;
     width: 95vw;
     height: 6vh;
 }
 
-#corpo{
+#corpo {
     grid-area: corpo;
     display: grid;
     grid-template-areas: "botoes"
-                         "conteudo";
+        "conteudo";
     grid-gap: 10px;
     grid-template-rows: 15vh 75vh;
-    width: 95vw; 
+    width: 95vw;
     height: 92vh
 }
 
-#botoes{
+#botoes {
     grid-area: botoes;
     display: grid;
     grid-template-areas: "modelo1 sobre";
-    grid-auto-columns: 1fr 1fr;
+    grid-auto-columns: 4fr 1fr;
     grid-gap: 10px;
-    background-color: #b2bd3a; 
+    background-color: #b2bd3a;
     height: 10vh
 }
 
-#modelo1{
-    grid-area: modelo1; 
-    width: 20vw; 
+#modelo1 {
+    grid-area: modelo1;
+    width: 20vw;
     height: 10vh
 }
 
-#sobre{
+#sobre {
     grid-area: sobre;
-    width: 20vw; 
+    width: 20vw;
     height: 10vh;
-    color: white
+
+
 }
 
-#titulo{
+#titulo {
     width: 100%;
-    height: 5vh; 
+    height: 5vh;
     font-size: 2rem;
 }
 
-#logo{
-    width: 10vw; 
+#logo {
+    width: 10vw;
     height: 5vh;
 }
 
-#conteudo{
+#conteudo {
     grid-area: conteudo;
     grid-template-areas: "imagemModelo"
-                         "texto";
-    background-color: #b2bd3a; 
-    width: 100%; 
+        "texto";
+    background-color: #b2bd3a;
+    width: 100%;
     height: 90vh;
+    ;
 }
 
+#texto {
+    grid-area: texto;
+}
+
+.dicas {
+    text-align: center;
+}
+
+#imagemModelo {
+    grid-area: imagemModelo;
+
+}
+
+
 /* As 3 partes abaixo são o scrollbar da div conteúdo */
-#conteudo{
+#conteudo {
     overflow: hidden;
     overflow-y: scroll;
 }
 
-#conteudo::-webkit-scrollbar{
-    width: 10px; 
+#conteudo::-webkit-scrollbar {
+    width: 10px;
     background-color: #7e8c10;
     border-radius: 10px;
+
 }
 
-#conteudo::-webkit-scrollbar-thumb{
+#conteudo::-webkit-scrollbar-thumb {
     background-color: #763531;
     border-radius: 10px;
 }
 
-a{
+a {
     font-size: 20px;
     background-color: #742c47;
     color: beige;
@@ -110,3 +128,89 @@ p {
     text-indent: 3ch;
 }
 
+.principal {
+    text-align: center;
+}
+
+.imagem{
+    width: 40%;
+    height: 100%;
+}
+
+@media screen and (max-width: 890px) {
+
+    #botoes {
+        grid-area: botoes;
+        height: 20vh
+    }
+
+    #sobre {
+        grid-area: sobre;
+        width: 30vw;
+        height: 10vh;
+
+
+    }
+
+    #modelo1 {
+        grid-area: modelo1;
+        width: 30vw;
+        height: 10vh
+    }
+
+    #imagemModelo {
+        grid-area: imagemModelo;
+        width: 78vw;
+
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    #botoes {
+        grid-area: botoes;
+        display: grid;
+        grid-template-areas: "modelo1 sobre";
+        grid-auto-columns: 2fr 2fr;
+        grid-gap: 10px;
+        background-color: #b2bd3a;
+        height: 10vh
+    }
+    
+}
+@media screen and (max-width: 650px) {
+    .dicas {
+        
+        height: 5vh;
+    }
+
+    .principal {
+        text-align: center;
+        height: 7vh;
+
+    }
+
+    .imagem{
+        width: 50%;
+        height: 100%;
+    }
+
+    #botoes {
+        grid-area: botoes;
+        height: 15vh
+    }
+
+    #sobre {
+        grid-area: sobre;
+        width: 40vw;
+        height: 10vh;
+
+    }
+
+    #modelo1 {
+        grid-area: modelo1;
+        width: 40vw;
+        height: 10vh
+    }
+
+
+}

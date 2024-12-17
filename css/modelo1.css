@@ -41,7 +41,7 @@ body{
     grid-area: botoes;
     display: grid;
     grid-template-areas: "modelo2 sobre";
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-gap: 10px;
     border: 4px;
     background-color: #b2bd3a; 
@@ -51,28 +51,30 @@ body{
 
 #modelo2{
     grid-area: modelo2; 
-    width: 50%; 
+    width: 40%; 
     height: 10vh;
-    border-radius: 3px
 }
 
 #sobre{
     grid-area: sobre;
-    width: 50%; 
-    height: 10vh; 
+    width: 60%; 
+    height: 8vh; 
     color: white;
-    border-radius: 3px
+
+    height: 10vh;
+    
 }
 
 #titulo{
-    width: 80vw;
-    height: 5vh; 
-    font-size: 2rem
+    width: 100%;
+    height: 6vh;
 }
 
 #logo{
     width: 10vw; 
     height: 5vh
+    
+    
 }
 
 #conteudo{
@@ -84,6 +86,9 @@ body{
     grid-template-rows: 40vh 50vh;
     width: 100%; 
     height: 90vh
+    
+    
+    
 }
 #texto1{
     grid-area: texto1;
@@ -94,6 +99,18 @@ body{
 
 #imagemModelo{
     grid-area: imagemModelo
+
+}
+
+#titulo1{
+    text-align: center;
+    grid-area: titulo1;
+
+}
+
+#dicas{
+    grid-area: dicas;
+    text-align: center;
 }
 
 /* As 3 partes abaixo são o scrollbar da div conteúdo */
