@@ -20,7 +20,7 @@ body{
 
 #cabecalho{
     grid-area: cabecalho;
-    background-color: #b2bd3a;
+    background-color: #c5d169;
     width: 95vw;
     height: 6vh
 
@@ -44,7 +44,7 @@ body{
     grid-template-columns: 3fr 1fr;
     grid-gap: 10px;
     border: 4px;
-    background-color: #b2bd3a; 
+    background-color: #c5d169; 
     height: 10vh;
 }
 
@@ -81,7 +81,7 @@ body{
     grid-area: conteudo;
     grid-template-areas: "imagemModelo"
                          "texto";
-    background-color: #b2bd3a; 
+    background-color: #c5d169; 
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 40vh 50vh;
     width: 100%; 
