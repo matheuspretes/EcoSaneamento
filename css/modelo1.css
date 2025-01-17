@@ -135,7 +135,7 @@ body{
 }
 
 #texto p{
-    font-size: clamp(0.65rem, 2cqi, 1.2rem);
+    font-size: clamp(1rem, 2cqi, 1.2rem);
 }
 
 #conteudo::-webkit-scrollbar-thumb{
