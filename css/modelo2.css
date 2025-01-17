@@ -70,7 +70,7 @@ body {
 }
 
 #texto p{
-    font-size: clamp(0.65rem, 2cqi, 1.2rem);
+    font-size: clamp(1rem, 2cqi, 1.2rem);
 }
 
 #logo{
@@ -215,4 +215,17 @@ p {
     }
 
 
+}
+
+@media screen and (max-width: 350px){
+
+    #imagemModelo{
+        height: 45vh;
+        width: 100%;
+    }
+
+    #imagem{
+        height: 100%;
+        width: 100%;
+    }
 }
