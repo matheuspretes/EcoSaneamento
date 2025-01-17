@@ -139,47 +139,14 @@ p {
     text-align: center;
 }
 
-@media screen and (max-width: 890px) {
-
-    #botoes {
-        grid-area: botoes;
-        height: 20vh
-    }
-
-    #sobre {
-        grid-area: sobre;
-        width: 30vw;
-        height: 10vh;
-
-
-    }
-
-    #modelo1 {
-        grid-area: modelo1;
-        width: 30vw;
-        height: 10vh
-    }
-
-    #imagemModelo {
-        grid-area: imagemModelo;
-        width: 78vw;
-
+@media screen and (min-width: 651px)  {
+    #imagemModelo{
+        width: 50%;
     }
     
 }
-@media screen and (max-width: 800px) {
-    #botoes {
-        grid-area: botoes;
-        display: grid;
-        grid-template-areas: "modelo1 sobre";
-        grid-auto-columns: 2fr 2fr;
-        grid-gap: 5px;
-        background-color: #b2bd3a;
-        height: 10vh
-    }
-    
-}
-@media screen and (max-width: 650px) {
+
+@media screen and (min-width: 351px)  and (max-width: 650px) {
     .dicas {
         
         height: 5vh;
