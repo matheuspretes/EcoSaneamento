@@ -144,7 +144,8 @@ body{
 }
 
 p {
-    margin: 8px;
+    margin-left: 150px;
+    margin-right: 150px;
     text-indent: 3ch
 }
 
